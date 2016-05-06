@@ -1,0 +1,63 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block title %}About{% endblock %}
+{% block body_block %}
+
+
+<div class="page-header">
+
+    <h3>Profile</h3>
+
+</div>
+<div class="page-header">
+
+    <h3>First Name:{{first}}</h3>
+
+</div>
+
+<div class="page-header">
+
+    <h3>Last Name: {{last}}</h3>
+
+</div>
+
+<div class="page-header">
+
+    <h3>Username: {{name}}</h3>
+
+</div>
+<div class="page-header">
+
+    <h3>Email Address: {{email}}</h3>
+
+</div>
+
+<div class="page-header">
+
+
+    <h3>Permissions: {{user.get_all_permissions}}</h3>
+
+</div>
+
+<div class="page-header">
+    <h3>Permissions: {{user.get_group_permissions}}</h3>
+</div>
+
+<div class="page-header">
+
+    <h3>Superuser status: {{super}}</h3>
+
+</div>
+
+<div class="page-header">
+
+    <h3>Active Status: {{active}}</h3>
+
+</div>
+
+<div class="page-header">
+</h3></h1>
+
+</div>
+
+{% endblock %}
